@@ -1,0 +1,2 @@
+
+collect "Bizarro" no_progress
