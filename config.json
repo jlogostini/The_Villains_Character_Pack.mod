@@ -1,0 +1,126 @@
+{
+  "Version": "1.1",
+  "ModID": "the-villains-character-pack",
+  "Author": {
+    "Name": "JohnLogostini",
+    "Role": "Mod Creator"
+  },
+  "Contributors": [
+  ],
+  "DisplayName": "The Villains Character Pack",
+  "DisplayImage": "assets\\art\\portrait.png",
+  "DisplayBackground": "assets\\art\\background.png",
+  "Description": "#Info\nThis Mod adds the 5 missing Villains from LEGO Batman 2 DC Super Heroes with the addition of Bizarro. Black Adam. Black Manta. Captain Cold. and Gorilla Grodd you can chose who you install useing the menu in Continuum go crazy have fun\n\nJoin the Discord Sever for more info or if you need help installing the mod\n( https://discord.gg/Q9gwRYzF8U )\n\nContinuum Mod Manager 1.1.0 Beta or later is required",
+  "Settings": [
+    {
+      "Category": "Config",
+      "Settings": [
+        {
+          "SettingID": "add-bizarro",
+          "SettingName": "Bizarro",
+          "Type": "Checkbox",
+          "DefaultValue": true,
+          "Description": "Enable Install ( Bizarro )"
+        },
+{
+          "SettingID": "add-blackadam",
+          "SettingName": "Black Adam",
+          "Type": "Checkbox",
+          "DefaultValue": true,
+          "Description": "Enable Install ( Black Adam )"
+        },
+        {
+          "SettingID": "add-blackmanta",
+          "SettingName": "Black Manta",
+          "Type": "Checkbox",
+          "DefaultValue": true,
+          "Description": "Enable Install ( Black Manta )"
+        },
+{
+          "SettingID": "add-captaincold",
+          "SettingName": "Captain Cold",
+          "Type": "Checkbox",
+          "DefaultValue": true,
+          "Description": "Enable Install ( Captain Cold )"
+        },
+{
+          "SettingID": "add-gorillagrodd",
+          "SettingName": "Gorilla Grodd",
+          "Type": "Checkbox",
+          "DefaultValue": true,
+          "Description": "Enable Install ( Gorilla Grodd )"
+        }
+      ]
+    }
+  ],
+  "LinkedIntegrations": [
+    {
+      "IntegrationID": "lego-batman-2-dc-super-heroes",
+      "TargetVersion": "1.6.*",
+      "MinimumVersion": "1.*",
+      "ModCategory": "Character"
+    }
+  ],
+  "InstallActions": [
+{
+      "Action": "WriteToFile",
+      "TargetFile": "[Game]\\CHARS\\COLLECTION.TXT",
+      "Disabled": "$MOD.add-bizarro = false",
+      "Content": [
+        {
+          "DataFilePath": "[Mod]\\Bizarro.txt",
+          "StartOffset": 6000,
+          "Replace": false
+        }
+      ]
+    },
+{
+      "Action": "WriteToFile",
+      "TargetFile": "[Game]\\CHARS\\COLLECTION.TXT",
+      "Disabled": "$MOD.add-blackadam = false",
+      "Content": [
+        {
+          "DataFilePath": "[Mod]\\BlackAdam.txt",
+          "StartOffset": 6000,
+          "Replace": false
+        }
+      ]
+    },
+{
+      "Action": "WriteToFile",
+      "TargetFile": "[Game]\\CHARS\\COLLECTION.TXT",
+      "Disabled": "$MOD.add-blackmanta = false",
+      "Content": [
+        {
+          "DataFilePath": "[Mod]\\BlackManta.txt",
+          "StartOffset": 6000,
+          "Replace": false
+        }
+      ]
+    },
+{
+      "Action": "WriteToFile",
+      "TargetFile": "[Game]\\CHARS\\COLLECTION.TXT",
+      "Disabled": "$MOD.add-captaincold = false",
+      "Content": [
+        {
+          "DataFilePath": "[Mod]\\CaptainCold.txt",
+          "StartOffset": 6000,
+          "Replace": false
+        }
+      ]
+    },
+{
+      "Action": "WriteToFile",
+      "TargetFile": "[Game]\\CHARS\\COLLECTION.TXT",
+      "Disabled": "$MOD.add-gorillagrodd = false",
+      "Content": [
+        {
+          "DataFilePath": "[Mod]\\GorillaGrodd.txt",
+          "StartOffset": 6000,
+          "Replace": false
+        }
+      ]
+    }
+  ]
+}
